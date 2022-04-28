@@ -45,7 +45,9 @@ jobs:
           git config --local user.email "actions@github.com"
 
           git add *
-          
+
+          git commit -am "GH ACTION Headlines $(date)"
+
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
 
